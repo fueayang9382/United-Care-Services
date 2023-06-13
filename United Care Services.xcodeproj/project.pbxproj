@@ -15,6 +15,8 @@
 		15916A532A37D3D600C4E94C /* United_Care_ServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15916A522A37D3D600C4E94C /* United_Care_ServicesUITests.swift */; };
 		15916A552A37D3D600C4E94C /* United_Care_ServicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15916A542A37D3D600C4E94C /* United_Care_ServicesUITestsLaunchTests.swift */; };
 		15916A622A37D68500C4E94C /* second_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15916A612A37D68500C4E94C /* second_view.swift */; };
+		1B6B54B42A392E02009D6908 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B54B32A392E02009D6908 /* SQLite.swift */; };
+		1B6B54B72A392F49009D6908 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6B54B62A392F49009D6908 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		15916A522A37D3D600C4E94C /* United_Care_ServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = United_Care_ServicesUITests.swift; sourceTree = "<group>"; };
 		15916A542A37D3D600C4E94C /* United_Care_ServicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = United_Care_ServicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		15916A612A37D68500C4E94C /* second_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = second_view.swift; sourceTree = "<group>"; };
+		1B6B54B32A392E02009D6908 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6B54B72A392F49009D6908 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +102,7 @@
 			children = (
 				15916A372A37D3D500C4E94C /* United_Care_ServicesApp.swift */,
 				15916A392A37D3D500C4E94C /* ContentView.swift */,
+				1B6B54B32A392E02009D6908 /* SQLite.swift */,
 				15916A612A37D68500C4E94C /* second_view.swift */,
 				15916A3B2A37D3D600C4E94C /* Assets.xcassets */,
 				15916A3D2A37D3D600C4E94C /* Preview Content */,
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = "United Care Services";
+			packageProductDependencies = (
+				1B6B54B62A392F49009D6908 /* SQLite */,
+			);
 			productName = "United Care Services";
 			productReference = 15916A342A37D3D500C4E94C /* United Care Services.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 15916A2B2A37D3D400C4E94C;
+			packageReferences = (
+				1B6B54B52A392F49009D6908 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 15916A352A37D3D500C4E94C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15916A3A2A37D3D500C4E94C /* ContentView.swift in Sources */,
+				1B6B54B42A392E02009D6908 /* SQLite.swift in Sources */,
 				15916A622A37D68500C4E94C /* second_view.swift in Sources */,
 				15916A382A37D3D500C4E94C /* United_Care_ServicesApp.swift in Sources */,
 			);
@@ -587,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B6B54B52A392F49009D6908 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B6B54B62A392F49009D6908 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B6B54B52A392F49009D6908 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15916A2C2A37D3D500C4E94C /* Project object */;
 }
